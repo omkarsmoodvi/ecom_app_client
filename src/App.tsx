@@ -1,16 +1,15 @@
-import { Route, Routes } from "react-router-dom"
-import Login from "@/pages/auth/Login"
-import Register from "@/pages/auth/Register"
-import UserLayout from "@/components/layouts/UserLayout"
-import UserProducts from "@/pages/user/UserProducts"
-import UserOrders from "@/pages/user/UserOrders"
-import UserCart from "@/pages/user/UserCart"
 import AdminLayout from "@/components/layouts/AdminLayout"
+import UserLayout from "@/components/layouts/UserLayout"
+import AdminOrders from "@/pages/admin/AdminOrders"
 import AdminProducts from "@/pages/admin/AdminProducts"
 import AdminUsers from "@/pages/admin/AdminUsers"
-import AdminOrders from "@/pages/admin/AdminOrders"
+import Login from "@/pages/auth/Login"
+import Register from "@/pages/auth/Register"
+import UserCart from "@/pages/user/UserCart"
+import UserOrders from "@/pages/user/UserOrders"
+import UserProducts from "@/pages/user/UserProducts"
 import UserProfile from "@/pages/user/UserProfile"
-import Vikas from "./components/admin/AdminOrders"
+import { Route, Routes } from "react-router-dom"
 
 const App = () => {
     return (
@@ -23,7 +22,7 @@ const App = () => {
                     <Route path="/user/orders" element={<UserOrders />} />
                     <Route path="/user/cart" element={<UserCart />} />
                     <Route path="/user/profile" element={<UserProfile />} />
-                    <Route path="/omkar"  element={<Vikas/>} />
+                   
                 </Route>
                 <Route element={<AdminLayout />}>
                     <Route path="/admin/products" element={<AdminProducts />} />

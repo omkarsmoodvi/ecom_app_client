@@ -21,12 +21,10 @@ import {
   RadioGroup,
   RadioGroupItem,
 } from "@/components/ui/radio-group"
-import { Omkar } from "@/components/admin/AdminOrders"
 const UserCart = () => {
   return (
     <div className="p-4 flex flex-row justify-center items-start w-full gap-4">
       <div className="w-[60%]">
-        <Omkar />
         <Table className="w-full bg-gray-50 p-4 rounded-md">
           <TableCaption className="font-bold text-lg">Toatal : 800</TableCaption>
           <TableHeader className="bg-gray-300">
