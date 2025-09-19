@@ -1,6 +1,6 @@
 import { getToken } from '@/config/AuthConfig';
 import axios from 'axios';
-const API = 'http://localhost:8080'
+const API = 'https://ecom068.onrender.com'
 const axiosInstance = axios.create({
     baseURL: API,
 })
